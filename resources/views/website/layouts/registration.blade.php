@@ -33,8 +33,8 @@ e[s]=e[s]||[],e.zaraz._preTrack=[],e.zaraz.track=(t,r)=>e.zaraz._preTrack.push([
 <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up" />
 </div>
 </form>
-<p class="loginhere">
-Have already an account ? <a href="{{route('user.login')}}" class="loginhere-link">Login here</a>
+<p class="loginhere fs-25">
+    Have already an account? <a class="btn btn-primary" href="{{route('user.login')}}">LOGIN</a>
 </p>
 </div>
 </div>

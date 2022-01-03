@@ -1,89 +1,75 @@
-<!-- Subscribe Form Starts Here -->
-<div class="subscribe-form">
+
+
+
+
+<!-- <div class="best-features">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <div class="line-dec"></div>
-              <h1>Subscribe on PIXIE now!</h1>
+              <h2>About Sixteen Clothing</h2>
             </div>
           </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="main-content">
-              <p>Integer vel turpis ultricies, lacinia ligula id, lobortis augue. Vivamus porttitor dui id dictum efficitur. Phasellus vel interdum elit.</p>
-              <div class="container">
-                <form id="subscribe" action="" method="get">
-                  <div class="row">
-                    <div class="col-md-7">
-                      <fieldset>
-                        <input name="email" type="text" class="form-control" id="email" 
-                        onfocus="if(this.value == 'Your Email...') { this.value = ''; }" 
-                    	onBlur="if(this.value == '') { this.value = 'Your Email...';}"
-                    	value="Your Email..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-5">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
+          <div class="col-md-6">
+            <div class="left-content">
+              <h4>Looking for the best products?</h4>
+              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+              <ul class="featured-list">
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Consectetur an adipisicing elit</a></li>
+                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
+                <li><a href="#">Corporis, omnis doloremque</a></li>
+                <li><a href="#">Non cum id reprehenderit</a></li>
+              </ul>
+              <a href="#" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-image">
+              <img src="website/assets/images/feature-image.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="filled-button">Purchase Now</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Subscribe Form Ends Here -->
 
-
-<div class="footer">
+    
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="logo">
-              <img src="assets/images/header-logo.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="footer-menu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">How It Works ?</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="social-icons">
-              <ul>
-                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-              </ul>
+            <div class="inner-content">
+              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+            
+            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">SUMON</a></p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Footer Ends Here -->
+    </footer>
 
 
-    <!-- Sub Footer Starts Here -->
-    <div class="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="copyright-text">
-              <p>Copyright &copy; 2019 Company Name 
-                
-                - Design: <a rel="nofollow" href="#">SUMON</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+
+  </body>
