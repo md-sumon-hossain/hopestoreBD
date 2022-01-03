@@ -48,8 +48,12 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- Banner Starts Here -->
     
     <!-- Banner Ends Here -->
-
+    <!-- <div class="page-heading products-heading header-text"> -->
     @yield('content')
+
+
+<!-- </div> -->
+
 
     
     @include('website.partials.footer')

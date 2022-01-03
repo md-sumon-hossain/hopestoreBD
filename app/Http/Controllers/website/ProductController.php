@@ -13,7 +13,9 @@ class ProductController extends Controller
 
 
         $key=null;
-        if(request()->search){
+        // dd(request()->all());
+        if(!empty(request()->search)){
+           
             $key=request()->search;
             $products = Product::with('category')
                 ->where('name','LIKE','%'.$key.'%')
