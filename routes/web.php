@@ -1,16 +1,17 @@
 <?php
-
+// backend
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\UserController;
 
-
+// website
 use App\Http\Controllers\website\HomeController;
 use App\Http\Controllers\website\AboutController;
 use App\Http\Controllers\website\LoginController;
 use App\Http\Controllers\website\ProductController as websiteProductController;
 use App\Http\Controllers\website\CategoryController as websiteCategoryController;
+use App\Http\Controllers\Website\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,9 +72,7 @@ Route::group(['prefix'=>'admin'],function (){
 
 
 
-        // CURD frontend
-        Route::get('frontproduct/view/{product_id}',[websiteProductController::class,'frontproductDetails'])->name('website.product.details');
-
+        
         // product category
         Route::get('/category/form',[CategoryController::class,'form'])->name('category.form');
         Route::post('/category/add',[CategoryController::class,'add'])->name('category.add');
@@ -87,6 +86,20 @@ Route::group(['prefix'=>'admin'],function (){
     });
 });
 
+// CURD frontend
+Route::get('frontproduct/view/{product_id}',[websiteProductController::class,'frontproductDetails'])->name('website.product.details');
+
+
 // Frontend view
 Route::get('/products',[websiteProductController::class,'productlists'])->name('website.productlists');
 Route::get('/category/lists',[websiteCategoryController::class,'frontcategory'])->name('website.categorylists');
+
+
+
+
+// cart
+Route::group(['middleware'=>'cart'],function(){
+Route::get('/add-to-cart/{id}',[OrderController::class,'addToCart'])->name('cart.add');
+Route::get('/get-cart',[OrderController::class,'getCart'])->name('cart.get');
+Route::get('/clea-cart',[OrderController::class,'clearCart'])->name('cart.clear');
+});

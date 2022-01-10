@@ -10,9 +10,10 @@
     <p>
         <img style="border-radius: 4px;" width="200px;" src=" {{url('/uploads/'.$product->image)}}" alt="product">
     </p>
-<p>Product Name: {{$product->name}}</p>
+<p><h2>Product Name: {{$product->name}}</h2></p>
 <!-- <p>Product Price: <h4><span style="color: orange">BDT {{$product->price}}</span></h4></p> -->
-<p>Category: {{$product->category->name}}</p>
+<p><h4>Category: {{$product->category->name}}</h4></p>
+<p><h3>Price: {{$product->price}}</h3></p>
 
 <!-- <p>Product Details: {{$product->description}}</p>
 <p>Product Status: {{$product->status}}</p> -->
@@ -21,6 +22,11 @@
     <input type="text" class="form-control" value="{{$product->name}}">
     <input type="file" class="form-control"> -->
 </div>
+<a class="btn btn-primary" href="{{route('cart.add',$product->id)}}">Add To cart</a>
+<a href="{{route('website.productlists')}}" class="btn btn-primary">Add new cart</a>
+<!-- <li class="nav-item">
+              <a class="nav-link" href="{{route('cart.get')}}">Cart({{session()->has('cart') ? count(session()->get('cart')):0}})</a>
+              </li> -->
 @endsection
 <script language="javascript">
     function PrintDiv(divName) {

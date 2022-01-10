@@ -80,7 +80,10 @@
               </li>
               <li class="nav-item">
               <a class="nav-link" href="{{route('website.categorylists')}}">All Category</a>
-            </li>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="{{route('cart.get')}}">Cart({{session()->has('cart') ? count(session()->get('cart')):0}})</a>
+              </li>
               @if(auth()->user())
             
               <a class="nav-link" href="{{route('user.logout')}}">{{auth()->user()->name}} |Logout</a>
@@ -89,6 +92,7 @@
               <a class="nav-link" href="{{route('user.registration')}}">Login/Registration</a>
             </li>
             @endif
+            
             </ul>
           </div>
         </div>

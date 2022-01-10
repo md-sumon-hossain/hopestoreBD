@@ -35,6 +35,7 @@ class ProductController extends Controller
         //dd($request->all());
         Product:: create([
             'name'=>$request->name,
+            'price'=>$request->price,
             'category_id'=>$request->category_id,
             'image'=>$filename
         ]);
@@ -105,7 +106,7 @@ class ProductController extends Controller
         $product->update([
             // field name from db || field name from form
             'name'=>$request->name,
-            // 'price'=>$request->price,
+            'price'=>$request->price,
             'category_id'=>$request->category,
             // 'details'=>$request->details,
             'image'=>$image_name,

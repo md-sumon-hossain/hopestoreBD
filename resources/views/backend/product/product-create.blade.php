@@ -26,7 +26,11 @@
         <label>Nmae</label>
         <input  name="name" type="text" class="form-control" placeholder="Enter name">
     </div>
-    
+    <div class="form-group">
+        <label>Price</label>
+        <input  name="price" type="number" class="form-control" placeholder="Enter name">
+    </div>
+   
     <div class="form-group">
         <label>Category</label>
         <select required name="category_id" type="text" class="form-control" placeholder="Enter name">

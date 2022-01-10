@@ -42,6 +42,9 @@
               <td>
               <a class="btn btn-primary" href="{{route('website.product.details',$product->id)}}">View</a>
             </td>
+            <td>
+              <a class="btn btn-primary" href="{{route('cart.add',$product->id)}}">Add To cart</a>
+            </td>
             </div>
           </div>
           @endforeach

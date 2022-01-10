@@ -20,10 +20,10 @@
 
     </div>
 
-    <!-- <div class="mb-3">
+    <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Product Price</label>
         <input name="price" value="{{$product->price}}" placeholder="Enter Product Price"  type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div> -->
+    </div>
 
     <div class="form-group">
     <label for="exampleFormControlSelect1">Product Category</label>

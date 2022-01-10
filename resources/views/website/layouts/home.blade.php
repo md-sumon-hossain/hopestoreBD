@@ -43,6 +43,7 @@
               <div class="down-content">
                     <h4>{{$product->name}}</h4>
                     <h6>{{$product->category->name}}</h6>
+                    <h3>{{$product->price}}</h3>
                 <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
@@ -53,6 +54,10 @@
                 </ul>
                 <span>Reviews (24)</span>
               </div>
+              <td>
+              <a class="btn btn-primary" href="{{route('website.product.details',$product->id)}}">View</a>
+              <a class="btn btn-primary" href="{{route('cart.add',$product->id)}}">Add To cart</a>
+            </td>
             
             </div>
           </div>

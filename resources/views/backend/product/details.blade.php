@@ -9,6 +9,7 @@
 <p>Product Name: {{$product->name}}</p>
 <!-- <p>Product Price: <h4><span style="color: orange">BDT {{$product->price}}</span></h4></p> -->
 <p>Category: {{$product->category->name}}</p>
+<p>Price: {{$product->price}}</p>
 
 <!-- <p>Product Details: {{$product->description}}</p>
 <p>Product Status: {{$product->status}}</p> -->

@@ -6,6 +6,7 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Nmae</th>
+      <th scope="col">Price</th>
       <th scope="col">Category</th>
       <th scope="col">Image</th>
       <th scope="col">Action</th>
@@ -17,6 +18,7 @@
     <tr>
       <th scope="row">{{$key+1}}</th>
       <td>{{$product->name}}</td>
+      <td>{{$product->price}}</td>
       <td>{{$product->category->name}}</td>
       <td><img src="{{asset('/uploads/'.$product->image)}}" width="90px" alt=""></td>
       @if(auth()->user()->role=='admin')
