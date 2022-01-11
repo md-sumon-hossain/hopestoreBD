@@ -102,4 +102,5 @@ Route::group(['middleware'=>'cart'],function(){
 Route::get('/add-to-cart/{id}',[OrderController::class,'addToCart'])->name('cart.add');
 Route::get('/get-cart',[OrderController::class,'getCart'])->name('cart.get');
 Route::get('/clea-cart',[OrderController::class,'clearCart'])->name('cart.clear');
+Route::get('/store/add-to-cart',[OrderController::class,'storeAddToCart'])->name('store.cart');
 });

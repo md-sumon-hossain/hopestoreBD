@@ -65,8 +65,35 @@ class OrderController extends Controller
             }
             //case 03: product exist into cart
                 //action: increase product quantity (quantity+1)
+            
+
+                // if(isset($cartExist[$id])){
+                //     $cartExist[$id],['quantity']++;
+                //     session()->put('cart',$cartExist);
+                //     return redirect()->back();
+                //  }
+                if(isset($cartExist[$id])) {
+                    $cartExist[$id]['quantity']++;
+                    session()->put('cart', $cartExist);
+                    return redirect()->back();
+                }
+
+
 
     }
+
+    public function storeAddToCart(Request $request,$id)
+    {
+         $product = Product::find($id);
+         $oldCart = Session::has('cart') ? Session::get('cart') : null;
+         $cart = new Cart($oldCart);
+         $cart->add($product, $product->id);
+
+         $request->session()->put('cart',$cart);
+
+          dd($request->session()->get('cart'));   //check the data value flow
+      return redirect()->back();
+}
 
     
 

@@ -7,7 +7,7 @@
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">SL</th>
             <th scope="col">Product Name</th>
             <th scope="col">Price</th>
             <th scope="col">Quantity</th>
@@ -17,9 +17,12 @@
         <tbody>
 
         @if($carts)
+        @php
+            $i=1;
+        @endphp
         @foreach($carts as $key=>$data)
         <tr>
-            <th scope="row">{{$key}}</th>
+            <th scope="row">{{$i++}}</th>
             <td>{{$data['name']}}</td>
             <td>{{$data['price']}}</td>
             <td>{{$data['quantity']}}</td>

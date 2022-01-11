@@ -1,0 +1,11 @@
+body,html {
+    background-image: url('/uploads/ip.jpeg');
+    height: 100%;
+}
+
+#profile-img {
+    height:180px;
+}
+.h-80 {
+    height: 80% !important;
+}

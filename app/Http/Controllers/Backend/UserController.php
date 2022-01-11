@@ -46,6 +46,7 @@ class UserController extends Controller
     public function logout()
     {
         Auth::logout();
+       
         // dd(auth()->user());
         return redirect()->route('admin.login')->with('message','Logging out.');
     }
