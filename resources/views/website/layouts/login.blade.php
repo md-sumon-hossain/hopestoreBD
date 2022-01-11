@@ -59,7 +59,10 @@ Login
                 
                 <input class="form-control form-group" type="text" name="email" placeholder="Email">
                 <input type="password" name="password" id="inputPassword" class="form-control form-group" placeholder="password" required autofocus>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">enter</button>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Enter</button>
+                <p class="loginhere fs-25">
+                  Don't have an account? <a class="btn btn-primary" href="{{route('user.registration')}}">Registration</a>
+                </p>
             </form><!-- /form -->
         </div>
     </div>

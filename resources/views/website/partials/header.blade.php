@@ -82,14 +82,15 @@
               <a class="nav-link" href="{{route('website.categorylists')}}">All Category</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="{{route('cart.get')}}">Cart({{session()->has('cart') ? count(session()->get('cart')):0}})</a>
+              <a class="nav-link" href="{{route('cart.get')}}">Cart({{session('cart') ? count(session('cart')):0}})</a>
               </li>
               @if(auth()->user())
             
               <a class="nav-link" href="{{route('user.logout')}}">{{auth()->user()->name}} |Logout</a>
               @else
               <li class="nav-item">
-              <a class="nav-link" href="{{route('user.registration')}}">Login/Registration</a>
+              <a class="nav-link" href="{{route('user.login')}}">Login/Reg.</a>
+
             </li>
             @endif
             

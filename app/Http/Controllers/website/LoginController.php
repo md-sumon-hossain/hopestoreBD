@@ -57,6 +57,7 @@ class LoginController extends Controller
     public function logout(){
         // session()->flush();
         Auth::logout();
+        session()->forget('cart');
         return redirect()->route('website.home');
     }
 
