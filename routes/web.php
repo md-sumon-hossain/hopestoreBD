@@ -93,6 +93,8 @@ Route::get('frontproduct/view/{product_id}',[websiteProductController::class,'fr
 // Frontend view
 Route::get('/products',[websiteProductController::class,'productlists'])->name('website.productlists');
 Route::get('/category/lists',[websiteCategoryController::class,'frontcategory'])->name('website.categorylists');
+Route::get('/contact',[AboutController::class,'contact'])->name('website.contact');
+
 
 
 
@@ -103,4 +105,15 @@ Route::get('/add-to-cart/{id}',[OrderController::class,'addToCart'])->name('cart
 Route::get('/get-cart',[OrderController::class,'getCart'])->name('cart.get');
 Route::get('/clea-cart',[OrderController::class,'clearCart'])->name('cart.clear');
 Route::get('/store/add-to-cart',[OrderController::class,'storeAddToCart'])->name('store.cart');
+Route::get('/store/cart',[OrderController::class,'storeCart'])->name('storedb.cart');
+
+
+
+
+Route::post('/order/place',[OrderController::class,'placeorder'])->name('order.place');
+
+Route::get('/order/input',[OrderController::class,'orderinput'])->name('place.input');
+
+
+
 });

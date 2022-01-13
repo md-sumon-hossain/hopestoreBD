@@ -11,4 +11,7 @@ class AboutController extends Controller
     public function about(){
         return view('website.layouts.about');
     }
+    public function contact(){
+        return view('website.layouts.contact');
+    }
 }

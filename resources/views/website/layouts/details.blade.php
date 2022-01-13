@@ -23,7 +23,7 @@
     <input type="file" class="form-control"> -->
 </div>
 <a class="btn btn-primary" href="{{route('cart.add',$product->id)}}">Add To cart</a>
-<a href="{{route('website.productlists')}}" class="btn btn-primary">Add new cart</a>
+<a href="{{route('website.productlists')}}" class="btn btn-info">Add new cart</a>
 <!-- <li class="nav-item">
               <a class="nav-link" href="{{route('cart.get')}}">Cart({{session()->has('cart') ? count(session()->get('cart')):0}})</a>
               </li> -->

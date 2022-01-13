@@ -76,7 +76,7 @@
                 <a class="nav-link" href="{{route('layouts.about')}}">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="{{route('website.contact')}}">Contact Us</a>
               </li>
               <li class="nav-item">
               <a class="nav-link" href="{{route('website.categorylists')}}">All Category</a>

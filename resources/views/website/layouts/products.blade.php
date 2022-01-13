@@ -1,8 +1,9 @@
 @extends('website.master')
 @section('content')
 <form action="{{route('website.productlists')}}" method="get">
+
   <div>
-        <input name="search" type="text" class="form-control" placeholder="Search...." >
+        <input name="search" type="text" class="form-control" placeholder="Search....">
         <button class="btn btn-primary" type="submit">
           Srearch
         </button>
