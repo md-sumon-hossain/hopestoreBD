@@ -25,7 +25,7 @@
                 </div>
 
                 <div>
-                   <button class="btn" style="background: none;"><i class="fa fa-share-alt mt-1"></i></button> 
+                    <button class="btn" style="background: none;"><i class="fa fa-share-alt mt-1"></i></button>
                     <i class="fa fa-heart mt-1 ml-4"></i>
                 </div>
             </div>
@@ -62,11 +62,12 @@
 
             <div class="ml-1 mt-4 d-flex justify-content-between align-items-center">
                 <p>Sold By : Inhouse product</p>
+                <button class="btn" data-toggle="modal" data-target="#deliveryModal">Delivery Options</button>
                 <button class="btn" data-toggle="modal" data-target="#exampleModalCenter">Chat Now</button>
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Chat now Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -94,7 +95,7 @@
             Discription
         </div>
         <div class="card-body">
-   
+
             <h5 class="card-title">{{$product->name}} Details</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         </div>
@@ -110,7 +111,30 @@
     </div>
 </div>
 
+<!-- delivery Modal -->
+<div class="modal fade" id="deliveryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delivery Options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p><i class="fa fa-location-arrow"></i> Your Location</p>
+                    <a href="#">(Change)</a>
+                </div>
 
+                <div class="d-flex justify-content-between align-items-center mt-2">
+                    <p><i class="fa fa-home"></i> Home Delivery</p>
+                    <p>৳ 70</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- <form class="print_order">
     <input class="btn btn-primary" type="button" onClick="PrintDiv('divToPrint');" value="Print">
 </form> -->
@@ -159,13 +183,13 @@
         document.getElementById("counter").innerHTML = counter;
     }
 
-    (function() {    
-    var dialog = document.getElementById('myFirstDialog');    
-    document.getElementById('show').onclick = function() {    
-        dialog.show();    
-    };    
-    document.getElementById('hide').onclick = function() {    
-        dialog.close();    
-    };    
-})();
+    (function() {
+        var dialog = document.getElementById('myFirstDialog');
+        document.getElementById('show').onclick = function() {
+            dialog.show();
+        };
+        document.getElementById('hide').onclick = function() {
+            dialog.close();
+        };
+    })();
 </script>
